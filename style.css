@@ -1,12 +1,15 @@
-html, body{
+ body{
     padding: 0;
     margin: 0;
+   
 }
 header{
-
-    width: 100%;
+    width: auto;
+   
+    margin: 0;
     height: 100px;
     background-image: url(img/header.jpg);
+    background-size: cover;
     
 }
  
@@ -22,7 +25,7 @@ a {
         border: solid 5px rgb(218, 210, 163);
         background-color: rgb(244, 222, 134);
     }
-nav ul{
+    nav ul{
   
     display: flex;
     justify-content: center;
@@ -55,10 +58,114 @@ nav li:hover .sous-menu{
     margin: 30px;
     list-style-type: none;
 }
-
-@media screen and (max-width:600px){
-
+main{
+    width: 100%;
+}
+@media screen and (max-width:900px){
+    header{
+        width: 100%;
+        
+        position:static;
+    }
+ nav{
+    width: 100%;
+    margin:0;
+    padding: 0;
+   
+ }
 a{
     font-size: small;
 }
+}
+@media (max-width: 375px) {
+    nav {
+      justify-content: center;
+      overflow-x: hidden;
+      position: fixed;
+    }
+  
+    
+  }
+
+
+/* Blog */
+.container{
+    margin: 6px;
+    height: 80%;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 5px;
+    text-align: justify;
+    
+}
+img{width: 600px;}
+.container p{
+
+    margin:15px;
+}
+.portrait{
+    display: grid;
+    grid-template-columns:1fr 2fr ;
+    gap: 8px;
+    background-color: rgb(215, 215, 223);
+   
+}
+.portrait p{
+    align-self: center;
+}
+.paysage{
+    background-color: rgb(212, 245, 234);
+    display: grid;
+    grid-template-columns:1fr 2fr ;
+    gap: 8px;
+}
+.digital-painting{
+    background-color: rgb(235, 208, 171);
+    display: grid;
+    grid-template-columns:1fr 2fr ;
+    gap: 8px;
+}
+
+@media screen and (max-width:900px) {
+
+    .portrait{
+        display:block;
+        height: auto;
+        gap: 2px;
+        background-color: rgb(215, 215, 223);
+      
+    }
+    .portrait, .paysage ,.digital-painting, img{
+       margin:50px 50px
+    }
+    .paysage{
+        background-color: rgb(212, 245, 234);
+        display: block;
+        gap: 8px;
+    }
+    .digital-painting{
+        background-color: rgb(235, 208, 171);
+        display: block;
+        gap: 2px;
+    }
+}
+
+/* footer */
+footer{
+    display: flex;
+   justify-content: center;
+   background-color: rgb(233, 220, 185);
+}
+footer p{
+    align-self: center;
+    }
+footer li{
+    list-style-type:none ;
+}
+footer ul{
+    display: flex;
+  
+}
+footer ul>li{
+    margin: 15px;
 }
