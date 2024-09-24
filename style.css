@@ -272,3 +272,29 @@ footer ul>li{
     
     
 }
+/* form */
+form{
+    display: grid;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    background-image: url(img/header.jpg);
+}
+
+textarea{
+    resize: none;
+    margin-bottom: 5px;
+}
+form .submit{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 40%;
+    margin: auto;
+    background-color: rgb(233, 229, 187);
+    border-radius: 6px;
+    border: solid 2px rgb(234, 216, 169);
+}
+.submit:hover{
+    background-color: rgb(221, 212, 131);
+}
