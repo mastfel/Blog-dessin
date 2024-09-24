@@ -273,6 +273,12 @@ footer ul>li{
     
 }
 /* form */
+h2{
+    
+    text-align: center;
+    font-size: xx-large;
+   
+}
 form{
     display: grid;
     width: 50%;
