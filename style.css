@@ -177,7 +177,7 @@ footer ul>li{
    justify-items: center;
     margin: 15px 15px  40px 15px ;
     background-color: rgb(216, 219, 222);
-    box-shadow: 10px 5px 5px rgb(165, 154, 154);;
+    box-shadow: 10px 5px 5px rgb(165, 154, 154);
    
 
 }
@@ -221,5 +221,30 @@ footer ul>li{
         margin: 5px 10px;
     
     }
+    
+}
+
+/* Formation paysage */
+.formations-paysages{
+    background-color: rgb(202, 238, 238);
+    
+ 
+}
+.formations-paysages img{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    background-color: rgb(218, 247, 237);
+
+}
+.formation-paysage{
+    background-color: blueviolet;
+    text-align: center;
+    background-color: rgb(228, 226, 223);
+    margin: 5px 20px 5px 20px;
+   
+   
+    box-shadow: 10px 5px 5px rgb(165, 154, 154);
+    
     
 }
